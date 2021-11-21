@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fionacci Series</title>
+</head>
+<body>
+    <script>
+        let a = 0;
+        let b = 1;
+        console.log(a);
+        console.log(b);
+        for(i=0; i<=5;i++){
+            let c = a+b; //temproray storage
+            // In first loop a will be 0 and b will be 1
+            // In second loop the a will be changed as 1 and b will be changed as 1 
+            console.log(c);
+            a = b;
+            b = c;
+        }
+    </script>
+</body>
+</html>
