@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script>
+
+        const operator = prompt('Enter operator ( either +, -, *,/ or % ): ');
+
+
+        const a = parseFloat(prompt('Enter the first number you want to calculate: '));
+        const b = parseFloat(prompt('Enter the second number you want to calculate: '));
+
+        let result;
+
+
+        if (operator == '+') {
+            result = a + b;
+        }
+        else if (operator == '-') {
+            result = a - b;
+        }
+        else if (operator == '*') {
+            result = a * b;
+        }
+        else if (operator == '%') {
+            result = a/100 * b;
+        }
+        else {
+            result = a / b;
+        }
+        // document.write(`${a} ${operator} ${b} = ${result}`)
+        console.log(`${a} ${operator} ${b} = ${result}`)
+    </script>
+</body>
+
+</html>
