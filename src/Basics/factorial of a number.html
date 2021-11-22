@@ -16,6 +16,14 @@
             console.log("Factorial for negative number is not possible");
         }else{
             for(var i=1; i<=number; i++){
+                //number = 5  ; factorial = 1
+                //i=1 ; 1<=5; 
+                //1 = 1*1 => 1
+                //1 = 1*2 => 2
+                //2 = 2*3 => 6
+                //6 = 6*4 => 24
+                //24 = 24*5 => 120
+                //last value stored in the factorial will be 120
                 factorial = factorial*i;
             }
             console.log(`The factorial of ${number} is ${factorial}`);
