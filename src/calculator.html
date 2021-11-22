@@ -11,32 +11,32 @@
 <body>
     <script>
 
-        const operator = prompt('Enter operator ( either +, -, *,/ or % ): ');
+        let operator = prompt('Enter operator ( either +, -, *,/ or % ): ');
 
 
-        const a = parseFloat(prompt('Enter the first number you want to calculate: '));
-        const b = parseFloat(prompt('Enter the second number you want to calculate: '));
+        let a = parseFloat(prompt('Enter the first number you want to calculate: '));
+        let b = parseFloat(prompt('Enter the second number you want to calculate: '));
 
-        let result;
+        let ans;
 
 
         if (operator == '+') {
-            result = a + b;
+            ans = a + b;
         }
         else if (operator == '-') {
-            result = a - b;
+            ans = a - b;
         }
         else if (operator == '*') {
-            result = a * b;
+            ans = a * b;
         }
         else if (operator == '%') {
-            result = a/100 * b;
+            ans = a/100 * b;
         }
         else {
-            result = a / b;
+            ans = a / b;
         }
-        // document.write(`${a} ${operator} ${b} = ${result}`)
-        console.log(`${a} ${operator} ${b} = ${result}`)
+        // document.write(`${a} ${operator} ${b} = ${ans}`)
+        console.log(`${a} ${operator} ${b} = ${ans}`)
     </script>
 </body>
 
