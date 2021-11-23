@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Snippets</title>
+</head>
+
+<body>
+    <script>
+        // array = [ ]; value
+        // object = { } key:value pair
+
+
+
+        // Array
+        const arr = [1, 2, 3, "Rishi", "Santhanu", "Abisha"];
+        // array[index];
+        console.log(arr[2]); // 3
+
+
+
+        // Object = { } key : value pair
+
+        const obj = { id: 1, name: "Rishi" };
+        // object[Key]
+        console.log(obj["id"]); // 1
+        console.log(obj["name"]); // Rishi
+
+        console.log(obj.id); // 1
+        console.log(obj.name); // Rishi
+
+
+
+
+
+        // Array of Number
+
+        var arrayOfObject = [1, 2, 3, 4, 5];
+        // array[index]
+        console.log(arrayOfObject[1]) // 2
+
+
+
+
+
+        // Array of String
+
+        var arrayOfString = ["Rishi", "Santhanu", "Abisha"];
+        // array[index];
+        console.log(arrayOfString[1]); // "Santhanu"
+
+
+
+
+        // Array of Object
+
+        var arrayOfObject = [
+            { id: 1, name: "Rishi" },
+            { id: 2, name: "Santhanu" },
+            { id: 3, name: "Abisha" },
+        ];
+
+        const user = arrayOfObject[2];
+        console.log(user); // { id:3 , name: "Abisha" }
+        const username = user["name"];
+        console.log(username); // "Abisha"
+
+
+
+
+        // Object of Array
+
+        var objectOfArray = {
+            ids: [1, 2, 3, 4],
+            name: ["Rishi", "Santhanu", "Abisha"],
+            drinks: ["Coke", "Slice", "7up"],
+        };
+
+        const drinks = objectOfArray.drinks; // ["Coke", "Slice", "7up"]
+        const output = drinks[2]; // "7up"
+
+        console.log(output); // "7up"
+
+
+
+
+        // Two-Dimensional array (Array of Arrays)
+
+        // const emptyArray = []
+        // emptyArray.push( [1,2,3] );
+        // emptyArray.push( [4,5,6] );
+        // emptyArray.push( ["Rishi", "Surya"] );
+        // console.log(emptyArray);
+
+        var arrayOfArray = [
+            [1, 2, 3, 4],
+            [5, 6, 7, 8],
+            ["Rishi", "Abisha"],
+            [{ age: 19, name: "Santhanu" }, { age: 23, name: "surya" }]
+        ];
+
+        const fourthArray = arrayOfArray[3];
+        console.log(fourthArray); // [ {age:19, name:"Santhanu" }, {age: 23, name: "surya"} ];
+
+        const userIndexOfOne = fourthArray[1];
+        console.log(userIndexOfOne); // { age:23, name:"Surya" };
+
+        const username1 = userIndexOfOne["name"]
+        console.log(username1); // Surya
+
+        // (OR)
+
+        const username_1 = arrayOfArray[3][1]["name"];
+
+    </script>
+
+</body>
+
+</html>

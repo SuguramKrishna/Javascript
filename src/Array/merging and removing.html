@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merging and removing of Array</title>
+</head>
+
+<body>
+    <script>
+        let car1 = ["BMW", "BENZ", "AUDI", "TOYOTA", "RR"];
+        let car2 = ["TATA", "SUZUKI", "FIAT", "OPEL", "BMW", "RENAULT", "AUDI"];
+        for (i = 0; i < car2.length; i++) {
+            car1.push(car2[i]);
+            //0<7; true;
+            //car2[0]
+        }
+        let mergedArray = [...new Set(car1)];
+        document.write(mergedArray);
+    </script>
+</body>
+
+</html>

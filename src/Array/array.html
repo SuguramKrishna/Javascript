@@ -10,18 +10,22 @@
 
 <body>
     <script>
-        myArray = ['h', 'e', 'l', 'l', 'o'];
 
-        //printing the element using index number
+
+        myArray = ['h', 'e', 'l', 'l', 'o'];
+        document.write(myArray)
+        document.write("<br>")
+        // printing the element using index number
         document.write(myArray[0]);
         document.write("<br>");
-        document.write(myArray[1]);
+        document.write(myArray[4]);
         document.write("<br>");
 
-        //printing the array
+        //printing the length of  array
         document.write("<br>");
         document.write(myArray.length);
         document.write("<br>");
+        console.log(myArray.length)
 
         //shifting and unshifting (unshifting -> adding the first element) & (shifting -> removing the first element)
         //shift
@@ -31,14 +35,14 @@
         document.write("<br>");
 
         //unshift
-        myArray.unshift("S")
+        myArray.unshift("Riyas")
         document.write("<br>");
         document.write(myArray);
         document.write("<br>");
 
         //pushing and poping (push -> Push is used to add a element in the array at the last) & (Pop -> Pop is used to remove a element in the array at the last) 
         //push
-        myArray.push("S")
+        myArray.push("Riyas H")
         document.write("<br>");
         document.write(myArray);
         document.write("<br>");
@@ -53,7 +57,8 @@
         document.write("<br>");
 
         //swapping two arrays
-        myArray[0] = myArray[4]
+        document.write(myArray)
+        myArray[0] = myArray[3]
         document.write("<br>");
         document.write(myArray);
         document.write("<br>");
@@ -61,16 +66,28 @@
         //splice
         document.write(myArray)
         document.write("<br>");
-        myArray.splice(4);
+        myArray.splice(3,1);
         document.write(myArray);
         document.write("<br>");
 
-        //for loop
+        // //for loop
         document.write("<br>");
         myArray1 = ['s', 'u', 'g', 'u']
         document.write(myArray1);
         document.write("<br>");
+        document.write(myArray1.length);
+        document.write("<br>");
         for (let i = 0; i < myArray1.length; i++) {
+
+            //i=0 ; 0<4; true 
+            //0 myArray[0]=S
+            // i= 0+1 => i=1
+            //i=1 ; 1<4; true 
+            //1 myArray[1]=u
+            //......
+            //i=3 ; 3<4; true
+            //...
+            //i=4 ; 4<4; false
             document.write(i);
             document.write(myArray1[i] + "<br>");
         }
