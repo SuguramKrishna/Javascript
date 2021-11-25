@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Item</title>
+</head>
+
+<body>
+    <script>
+        function random_item(items) {
+
+            return items[Math.floor(Math.random() * items.length)];
+
+        }
+
+        var items = [254, 45, 212, 365, 2543];
+        console.log(random_item(items));
+
+
+        //Math.floor =>  function returns the largest integer less than or equal to given number
+
+        let arrayOne = ["Macbook", "Dell", "HP", "Asus", "Acer"]
+
+    </script>
+</body>
+
+</html>

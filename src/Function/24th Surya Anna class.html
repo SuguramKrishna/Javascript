@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+
+        //function definition and declaration
+        function myfunction() {
+            console.log("helo world");
+        }
+
+        myfuction();
+
+
+        //================================================
+
+
+        function myfuction(params) {
+            console.log(params);
+        }
+        myfuction(); //This will show outout as undefined
+
+        myfuction("hii") //This is not recommend
+
+        //recommend way
+        var username = "Suguram"
+        myfuction(username);
+
+        //==========================================================
+        //passing two inputs in the parameters
+        
+        function adding(no1, no2) {
+            const addition = no1 + no2;
+            console.log(addition);
+        }
+
+        const input1 = 20;
+        const input2 = 10;
+
+        adding(input1, input2);
+
+        //pass two inputs
+        //return the difference of two number
+
+        function subtraction(a,b){
+            const difference = a-b;
+            console.log(difference);
+        //the key return is used to show the output
+        return difference;
+        }
+        
+
+
+    </script>
+</body>
+
+</html>
