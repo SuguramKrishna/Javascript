@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="submithandler()">
+        <input type="text" id="input-box">
+        <button id="add-button" type="submit">Add the Task</button>
+        <ul id="taskLists">
+             <!-- this ul is used to display the inputs we received from user -->
+        </ul>
+    </form>
+    <script>
+        const newTask = [];
+        function submithandler() {
+            event.preventDefault();
+            let task = document.getElementById("input-box").value;
+            // console.log(task);
+
+            newTask.push(task);
+            // console.log(newTask);
+            
+            const liTasks="";
+
+             for(i=0; i<newTask.length; i++){
+                 let li = "<li>"+ newTask[i] +"</li>";
+                 liTasks = liTasks+li;
+             }
+
+             let ulTag = document.getElementById("taskLists");
+             ulTag.innerHTML=liTasks;
+
+        }
+    </script>
+</body>
+
+</html>
