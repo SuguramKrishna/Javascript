@@ -6,25 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator-2</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <form onsubmit="calc()">
-        <input id="number1" type="number" placeholder="Enter a Number">
-        <input id="number2" type="number" placeholder="Enter a Number">
+    <h1>FWSA First Calculator</h1>
+    <div class="calc1">
+        <form onsubmit="calc()">
+            <input id="number1" type="number" placeholder="Enter a Number">
+            <br>
+            <select id="operation">
+                <option value="+">Addition</option>
+                <option value="-">Subtraction</option>
+                <option value="*">Multiplication</option>
+                <option value="/">Division</option>
+            </select>
+            <br>
+            <input id="number2" type="number" placeholder="Enter a Number">
+            <br>
+            <button type="submit">Calculate</button>
+            <br>
+            <input type="number" id="result">
 
-        <select id="operation">
-            <option value="+">+</option>
-            <option value="-">Subtraction</option>
-            <option value="*">Multiplication</option>
-            <option value="/">Division</option>
-        </select>
-
-        <input type="number" id="result">
-        <button type="submit">Calculate</button>
-
-    </form>
-
+        </form>
+    </div>
     <script src="./calc.js"></script>
 </body>
 

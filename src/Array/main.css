@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(253, 252, 162);
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5%;
+}
+.calc1{
+    background-color: midnightblue;
+    margin: auto;
+    height: 500px;
+    margin-top: 5%;
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+    line-height: 4;
+    border-radius: 24px;
+}
+
+.calc1 input[type="number"]{
+    /* border-radius: 10px; */
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px gold solid;
+    background: transparent;
+    outline: none;
+    
+}
+
+.calc1 select{
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    background-color: wheat;
+}
+
+button{
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    height: 50px;
+    background-color: wheat;
+}
+
+::placeholder{
+    color: wheat;
+    text-align: center;
+}
+
+input{
+    color: wheat;
+    text-align: center;
+}
