@@ -7,27 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ios Calculator</title>
     <link rel="stylesheet" href="./ios.css" />
-    
+
 </head>
 
 <body>
     <div class="calculator">
         <div class="notch">
             <div class="time">
-                20:18<span>Designed by SK</span>
+                20:18<span><img src="./ios status.png"></span>
             </div>
         </div>
         <div class="main">
             <div class="calc_button">
-                <input type="text" placeholder="0" id="input_Box">
+                <input type="text" placeholder="0" id="result_Box">
                 <button onclick="clr()" class="extra_buttons">AC</button>
-                <button onclick="del()" class="extra_buttons">⌫ </button>
-                <button onclick="work('%')" class="extra_buttons">%</button>
-                <button onclick="work('÷')" class="operator_buttons">÷</button>
+                <button onclick="dele()" class="extra_buttons">Del</button>
+                <button onclick="squrt()" class="extra_buttons">√</button>
+                <button onclick="work('/')" class="operator_buttons">÷</button>
                 <button onclick="work('7')">7</button>
                 <button onclick="work('8')">8</button>
                 <button onclick="work('9')">9</button>
-                <button onclick="work('x')" class="operator_buttons">x</button>
+                <button onclick="work('*')" class="operator_buttons">x</button>
                 <button onclick="work('4')">4</button>
                 <button onclick="work('5')">5</button>
                 <button onclick="work('6')">6</button>
@@ -38,8 +38,11 @@
                 <button onclick="work('+')" class="operator_buttons">+</button>
                 <button onclick="work('0')" class="button_0">0</button>
                 <button onclick="work('.')">.</button>
-                <button onclick="operation()" class="operator_buttons">=</button>
+                <button onclick="calcuButton()" class="operator_buttons">=</button>
             </div>
+        </div>
+        <div class="home_button">
+            <img src="./home_butto.png"></span>
         </div>
     </div>
     <script src="ios.js"></script>
