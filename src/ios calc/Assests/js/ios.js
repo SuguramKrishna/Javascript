@@ -34,7 +34,7 @@ function calcuButton(){
 
     let x = document.getElementById('result_Box').value
     
-    console.log(x);
+    // console.log(x);
 
     let y = eval(x);
 

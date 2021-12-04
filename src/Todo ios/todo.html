@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS To do </title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <div class="todo">
+        <div class="notch">
+            <div class="time">
+                20:18<span><img src="./ios status.png"></span>
+            </div>
+            <div class="todo_form">
+                <form onsubmit="submithandler()">
+                    <p>New Task <span> <button id="add-button" class="plus_button" type="submit">+</button></span></p>
+                    <h1>To-Do</h1>
+                    <div class="input_box">
+                    <input type="text" id="input-box">
+                    </div>
+                    <br>
+                    <ul id="taskLists">
+                         <!-- this ul is used to display the inputs we received from user -->
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./todo.js"></script>
+</body>
+
+</html>

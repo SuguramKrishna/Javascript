@@ -8,7 +8,7 @@
 body {
   font-family: "Helvetica Neue", sans-serif;
   margin: 25px;
-  background-image: url("./mac.png");
+  background-image: url("../image/mac.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
